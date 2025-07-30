@@ -1,6 +1,6 @@
 import React from "react"
 import MyProfile from './components/myprofile'
-import './App.css';
+import './styles/App.css';
 
 
 function App() {

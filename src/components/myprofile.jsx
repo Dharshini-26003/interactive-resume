@@ -1,6 +1,6 @@
 import React from 'react'
-import dharshini from '../assets/profile.jpg'
-
+import dharshini from '../assets/profile/dharshini.jpg'
+import '../styles/myprofile.css'
 
 function MyProfile() {
   return (
