@@ -1,0 +1,54 @@
+
+.resumeintro{
+    display: flex;
+}
+.profile {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex: 1;
+    min-width: 250px;
+    padding: 280px 0;
+    justify-content: center;
+}
+.ProfilePic {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    padding-right: 0 20px;
+    
+}
+.ProfilePic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.topright {
+    position: flex;
+    top: 0px;
+    right: 0px;
+    z-index: 1000;
+}
+.social-icons-container{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+}
+.topright{
+   cursor: pointer;
+}
+
+.social-icons {
+   margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.menu-button {
+  margin-bottom: 10px;
+  background-color: #0077b5;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
