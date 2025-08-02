@@ -14,6 +14,7 @@
     color: #333;
     margin-bottom: 10px;
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 @media (max-width: 768px){
   .about-sec {
@@ -28,4 +29,5 @@
     line-height: 1.6;
     margin-bottom: 10px;
     text-align: left;
+    font-weight: 400;
 }
