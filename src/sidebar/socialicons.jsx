@@ -51,7 +51,15 @@ function Icons(){
          </div>  
           <div>
             <img src={require('../assets/Dharshupic.jpg')} alt="Dharshu" className='side-image' />
-         </div> 
+         </div>
+         <nav className="menu-bar">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
          <div className='social-icons'>
             <a href="https://www.linkedin.com/in/yoga-dharshini-5b6542293/" 
             target="_blank" rel="noreferrer" className='icon-linkedin'>
@@ -99,3 +107,4 @@ function Icons(){
 
 }
 export default Icons
+ 

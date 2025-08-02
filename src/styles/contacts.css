@@ -1,0 +1,65 @@
+/* Contact section */
+section {
+  padding: 3rem 1rem;
+  background-color: #f0f4f8;
+  color: #333;
+  text-align: center;
+}
+
+/* Heading */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+/* Contact info container */
+.contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Each contact item */
+.contact-info p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Label (Email, LinkedIn, GitHub) */
+.contact-info strong {
+  color: #555;
+}
+
+/* Link styling */
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+  word-break: break-word;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.contact-info a:hover {
+  color: #0056b3;
+  transform: scale(1.02);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-info {
+    padding: 1.5rem;
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+  }
+}

@@ -23,21 +23,23 @@
     margin: 0px auto
 }}
   .edu-sec h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     border-bottom: 2px solid #0b8200;
     padding-bottom: 0.5px;
     margin-bottom: 1rem;
 }
-.edu-list p :hover{
+.edu-sec p :hover{
     background-color: white;
     transition: background-color 0.3s ease;
     cursor: default;
 }
 .edu-sec p strong{
+    font-size: 1.1rem;
     color: #333
 }
 .edu-sec p span{
     font-weight: 300;
     padding: 5px;
     color: #515151;
+    font-size: 1.1rem;
 }
