@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/interactive-resume/static/css/main.1261131e.css",
+    "main.js": "/interactive-resume/static/js/main.8b452f45.js",
+    "static/media/dharshini.jpg": "/interactive-resume/static/media/dharshini.0cb943ed52deff2f237a.jpg",
+    "static/media/Dharshupic.jpg": "/interactive-resume/static/media/Dharshupic.019486145d020f21d691.jpg",
+    "index.html": "/interactive-resume/index.html",
+    "main.1261131e.css.map": "/interactive-resume/static/css/main.1261131e.css.map",
+    "main.8b452f45.js.map": "/interactive-resume/static/js/main.8b452f45.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1261131e.css",
+    "static/js/main.8b452f45.js"
+  ]
+}
