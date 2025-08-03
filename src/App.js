@@ -22,7 +22,7 @@ function App() {
   return (
     <div>
       <div className="resumeintro">
-        <ProfilePic />
+        <ProfilePic/>
         <MyProfile />
         <Icons />
       </div>
@@ -35,7 +35,7 @@ function App() {
       <div className="edu-sec">
         <MyEducations />  
       </div>
-      <div className="projects-sec">
+      <div className="project-sec">
         <MyProjects/>
       </div>
       <div className="contact-sec">

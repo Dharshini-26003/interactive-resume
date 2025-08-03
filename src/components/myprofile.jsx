@@ -1,10 +1,13 @@
 import React from 'react'
 function MyProfile() {
   return (
-    <div className='profile'>
+    <div className='profile' id='home'>
       <h2>Hi! Am Dharshini</h2>
-      <button type="button" class="btn btn-outline-primary" disabled>Know More</button>
-      
+<button onClick={() => {
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+}} className='knowmore'>
+  Know More
+</button>      
     </div>
   )
 }

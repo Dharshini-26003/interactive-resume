@@ -6,6 +6,20 @@ html {
     background-color: #31473A;
 
 }
+.knowmore{
+    color: rgb(0, 78, 39);
+    border: none;
+    background-color:#b0b0b0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.knowmore:hover{
+    background-color: #00a767;
+}
 .profile {
     font-family: Georgia, 'Times New Roman', Times, serif;
     flex: 1;
@@ -55,21 +69,21 @@ html {
 .icon-menu {
   position: fixed;
   top: 0px;
-  right: 0px;
+  right: 8px;
   cursor: pointer;
   z-index: 1002;
-  color: rgb(98, 196, 38);
+  color: rgb(219, 255, 197);
 }
 .close-icon{
     position: fixed;
     top: 0px;
     right: 220px;
     cursor: pointer;
-    color: rgb(255, 2, 2);
+    color: rgb(255, 26, 26);
 }
 .full-width{
-  width: 250px;
-  height: 100vh;
+  width: 260px;
+  max-height: fit-content;
   color: rgb(3, 3, 3);
   background-color:  #EDF4F2;
 }
@@ -96,7 +110,7 @@ html {
     gap: 1px;
     padding: 20px 0;
 }
-.menu-button {
+.menu-button{
   margin-bottom: 10px;
   background-color: #0077b5;
   color: white;
@@ -129,16 +143,16 @@ html {
   gap: 2rem;
   margin: 0;
 }
-
 .menu-bar li a {
-  flex: display;
+  padding: ;
+  display: flex;
+  margin-right: 40px;
   flex-direction: column;
   text-decoration: none;
-  color: #007bff;
+  color: #05cf7b;
   font-weight: 600;
   transition: color 0.3s ease;
-}
-
+  }
 .menu-bar li a:hover {
-  color: #0056b3;
+  color: #12714a;
 }

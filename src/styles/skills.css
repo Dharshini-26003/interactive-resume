@@ -1,7 +1,7 @@
 .skills-sec{
-    background-color: #f9f9f9;
+    background-color: #f5f5f5;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     max-width: 800px;
     margin: 0px auto;
@@ -16,18 +16,24 @@
     margin-bottom: 1rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.skills-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
 .skills-list li {
   background-color: #f0f0f0;
   padding: 0.5rem 1rem;
-  border-radius: 6px;
+  border-radius: 50px;
   text-align: left;
   font-weight: 300;
   color: black;
-  margin-left: 300px;
-  
+  margin-left: 320px;
 }
 .skils-list li:hover {
-  background-color: #e67e22;
   color: white;
   transition: background-color 0.3s ease;
   cursor: default;

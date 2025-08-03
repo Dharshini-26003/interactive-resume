@@ -1,19 +1,15 @@
 /* Contact section */
-section {
+.section {
   padding: 3rem 1rem;
   background-color: #f0f4f8;
   color: #333;
   text-align: center;
 }
-
-/* Heading */
 section h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
 
 }
-
-/* Contact info container */
 .contact-info {
   max-width: 600px;
   margin: 0 auto;
@@ -23,11 +19,13 @@ section h2 {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
 /* Each contact item */
 .contact-info p {
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
+}
+.contact-info p :hover{
+     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 /* Label (Email, LinkedIn, GitHub) */

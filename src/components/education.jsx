@@ -2,7 +2,7 @@ import React from 'react';
 
 function MyEducations(){
     return(
-        <section>
+        <section id='education'>
             <h2>Education</h2>
             <article className='edu-list'>
                 <h3>College/University</h3>
