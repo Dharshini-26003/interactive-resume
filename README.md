@@ -13,7 +13,6 @@ I’m passionate about creating elegant, user-friendly web experiences and shari
 - HTML5
 - CSS3
 - Bootstrap
-- Adobe Photoshop (for visual elements)
 
 ## 🎨 Features
 - Modular React components for each resume section  
