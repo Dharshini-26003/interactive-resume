@@ -21,27 +21,27 @@ import './styles/footer.css';
 function App() {
   return (
     <div>
-      <div className="resumeintro">
+      <div className="resumeintro" fade-in>
         <ProfilePic/>
         <MyProfile />
         <Icons />
       </div>
-      <div className="about-sec">
+      <div className="about-sec" fade-in>
         <About />
       </div>
-      <div className="skills-sec">
+      <div className="skills-sec" fade-in>
         <MySkills />
       </div>
-      <div className="edu-sec">
+      <div className="edu-sec" fade-in>
         <MyEducations />  
       </div>
-      <div className="project-sec">
+      <div className="project-sec"  fade-in>
         <MyProjects/>
       </div>
-      <div className="contact-sec">
+      <div className="contact-sec"  fade-in>
         <Mycontact />
       </div>  
-      <div className="footer-sec">
+      <div className="footer-sec" fade-in>
       <Footer/>
       </div>
         
