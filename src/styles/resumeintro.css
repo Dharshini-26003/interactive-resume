@@ -55,11 +55,26 @@ html {
     flex-direction: row;
     justify-content: center;
   }
+  .ProfilePic {
+  width: 200px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.menu-bar ul {
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
 }
 .ProfilePic {
-    width: 100vh;
-    height: 100vh;
+  width: 300px;
+  height: auto;
+  max-width: 90vw;
+  border-radius: 50%;
 }
+
 .social-icons-container {
   position: relative; /* or fixed if you want it to float */
   top: 0px;
@@ -155,4 +170,19 @@ html {
   }
 .menu-bar li a:hover {
   color: #12714a;
+}
+@media (max-width: 480px) {
+  .resumeintro {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .profile h2 {
+    font-size: 1.5rem;
+  }
+
+  .knowmore {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
 }

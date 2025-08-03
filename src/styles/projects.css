@@ -1,22 +1,23 @@
-.project-sec{
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    max-width: 800px;
-    margin: 0px auto;
-    transition: box-shadow 0.3s ease;
-    margin-top: 2rem;
-    color: #333;
+.project-sec {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 2rem auto 0 auto;
+  transition: box-shadow 0.3s ease;
+  color: #333;
 }
-.project-sec h2{
-    font-size: 1.5rem;
-    border-bottom: 2px solid #0b8200;
-    padding-bottom: 0.5px;
-    margin-bottom: 1rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+.project-sec h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #0b8200;
+  padding-bottom: 0.5px;
+  margin-bottom: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.project-list{
+
+.project-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,49 +25,68 @@
   background-color: #f0f0f0;
   border-radius: 10px;
 }
+
 .project-list h3 {
   background-color: #f0f0f0;
   border-radius: 50px;
   text-align: left;
   font-weight: 500;
   color: #333;
+  font-size: 1.2rem;
 }
+
 .project-list h3:hover {
   cursor: default;
 }
+
 .project-list p {
   padding: 3px;
   background-color: #f0f0f0;
   border-radius: 6px;
   text-align: left;
-  font-weight: 300; 
+  font-weight: 300;
+  font-size: 1rem;
 }
-/* Responsive tweaks */
-    @media (max-width: 600px) {
-        .project-sec {
-        padding: 1rem;
-        }
-    }
-        .project-list h3 {
-        font-size: 1.2rem;
-        }
-    
-        .project-list p {
-        font-size: 1rem;
-        }
-.project-list strong{
-    padding: 10px;
-    text-align: left;
+
+.project-list strong {
+  padding: 10px;
+  display: block;
+  text-align: left;
 }
-.project-list p li {
-    list-style-type: disc;
-    margin-top: 5px;
-    margin-left: 30px;
-    font-weight: 300;
+
+/* ✅ Fix this — li should not be inside p */
+.project-list ul {
+  margin-left: 1.5rem;
+  padding-left: 1rem;
 }
-.project-list p span {
-    list-style-type: none;
-    text-align: left;
-    font-weight: 300;
-  
+.project-list ul li {
+  list-style-type: disc;
+  margin-top: 5px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.project-list span {
+  display: block;
+  font-weight: 300;
+  text-align: left;
+}
+
+/* 📱 Responsive tweaks */
+@media (max-width: 600px) {
+  .project-sec {
+    padding: 1rem;
+  }
+
+  .project-list h3 {
+    font-size: 1rem;
+  }
+
+  .project-list p {
+    font-size: 0.95rem;
+  }
+
+  .project-list ul li {
+    font-size: 0.95rem;
+  }
 }
