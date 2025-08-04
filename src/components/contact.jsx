@@ -21,19 +21,6 @@ function Mycontact(){
             </article>
         </section>
     );
-
-
-
-        
-    
-
-
-
-
-
-
-
-
-  
+ 
 }
 export default Mycontact;

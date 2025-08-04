@@ -1,6 +1,8 @@
 .skills-sec {
-  background-color: #f5f5f5;
-  padding: 20px;
+  background-color: #f9f9f9;
+  padding: 2rem 1rem;
+
+  text-align: center;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   max-width: 800px;
@@ -21,43 +23,46 @@
 .skills-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 10px;
+  align-items: flex-start;
+  padding: 0px 110px;
   background-color: #f0f0f0;
   border-radius: 10px;
 }
+.skills-section ul {
+  list-style-type: none;
+  padding: 0;
+}
 
 .skills-list li {
-  background-color: #f0f0f0;
-  padding: 0.5rem 1rem;
-  border-radius: 50px;
+ background-color: #e0e0e0;
+  margin: 0.5rem 9rem;
+  padding: 0.6rem;
+  border-radius: 4px;
   text-align: center;
+  font-size: 1rem;
+  word-break: break-word;
   font-weight: 300;
   color: black;
-   margin: 0 auto;
   max-width: 90%
+ 
 }
 
 .skills-list li:hover {
-  background-color: #0b8200;
+  background-color: #8c8b8b;
   color: white;
   transition: background-color 0.3s ease;
   cursor: default;
 }
+@media (max-width: 600px) {
+  .skills-section {
+    padding: 1rem;
+  }
 
-.skills-list div {
-  padding: 3px;
-  background-color: #f0f0f0;
-  border-radius: 6px;
-  text-align: center;
-  font-weight: 300;
-}
+  .skills-section ul {
+    padding-left: 1rem;
+  }
 
-/* 📱 Mobile Tweaks */
-@media (max-width: 768px) {
-  .skills-list li {
-    font-size: 1rem;
-    max-width: 100%;
-    margin: 8px auto;
+  .skills-section li {
+    font-size: 0.95rem;
   }
 }

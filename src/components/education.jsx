@@ -7,7 +7,7 @@ function MyEducations(){
             <article className='edu-list'>
                 <h3>College/University</h3>
                 <p>
-                    <strong>Degree: </strong>
+                  <strong>Degree: </strong>
                   <span>Bachelor of Arts in English Literature</span> 
                 </p>
                 <p>
