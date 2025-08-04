@@ -5,7 +5,7 @@
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   max-width: 800px;
-  margin: 2rem auto 0 auto;
+  margin: 0 auto;
   transition: box-shadow 0.3s ease;
   color: #333;
   box-sizing: border-box;
@@ -30,12 +30,12 @@
 
 }
 .skills-list ul {
-  background-color: #e4e1e1;
+  background-color: #e0e0e0;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 1rem;
   font-weight: 500;
-  color: #333;
+  color: #7d7d7d;
 }
 
 .skills-list li {

@@ -3,7 +3,11 @@
   "name": "myresume",
   "version": "0.1.0",
   "private": true,
+  "description": "Interactive resume built with React",
+  "author": "Yogadharshini S",
+  "license": "MIT",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.6.4",
     "@testing-library/react": "^16.3.0",
@@ -12,19 +16,15 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "description": "Interactive resume built with React",
-    "author": "Yogadharshini S",
-    "license": "MIT"
+    "web-vitals": "^2.1.4"
   },
-  
   "scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -32,6 +32,10 @@
       "react-app/jest"
     ]
   },
+  "overrides": {
+  "nth-check": "^2.0.1",
+  "postcss": "^8.4.31"
+},
   "browserslist": {
     "production": [
       ">0.2%",

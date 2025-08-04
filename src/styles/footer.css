@@ -1,74 +1,70 @@
-/* Footer container */
 .footer {
-  background-color: #1e1e1e;
+  background-color: #222;
   color: #fff;
-  padding: 2rem; /* Reduced from 3rem */
+  padding: 40px 20px;
   text-align: center;
-  transition: box-shadow 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.footer:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+.footer p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
-/* Optional heading inside footer */
-.footer h2 {
-  font-size: 1.8rem; /* Slightly smaller */
-  margin-bottom: 1.5rem; /* Reduced from 2rem */
-  color: #ffffff;
-}
-
-/* Contact form container */
 .contact-form {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
-  padding: 1rem; /* Reduced from 2rem */
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-/* Form layout */
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem; /* Adds consistent spacing between fields */
-}
-
-/* Labels */
-.contact-form label {
-  margin-bottom: 0.3rem; /* Reduced from 0.5rem */
-  font-weight: 600;
-  color: #333;
   text-align: left;
+  background-color: #d8d5d5;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-/* Inputs and textarea */
+.contact-form h2 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #666464;
+}
+
 .contact-form input,
 .contact-form textarea {
-  padding: 0.4rem; /* Slightly reduced */
-  margin-bottom: 0.8rem; /* Reduced from 1.5rem */
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
   font-size: 1rem;
-  transition: border-color 0.3s ease;
+  background-color: #555;
+  color: #fff;
 }
 
-/* Focus styles */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bbb;
+}
+
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #007bff;
-  outline: none;
+  outline: 2px solid #00bcd4;
+  background-color: #444;
 }
 
-/* Submit button */
 .contact-form button {
-  padding: 0.6rem 1rem;
-  background-color: #007bff;
-  color: white;
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 10px 18px;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0097a7;
+}
+
+.contact-form p {
+  margin: 5px 0;
 }

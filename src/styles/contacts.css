@@ -1,6 +1,8 @@
 /* Contact section */
 .section {
-  padding: 3rem 1rem;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1rem;
   background-color: #f0f4f8;
   color: #333;
   text-align: center;
