@@ -1,6 +1,6 @@
 .project-sec {
   background-color: #f5f5f5;
-  padding: 20px;
+  padding: 10px; /* Reduced from 20px */
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   max-width: 800px;
@@ -12,7 +12,7 @@
 .project-sec h2 {
   font-size: 1.5rem;
   border-bottom: 2px solid #0b8200;
-  padding-bottom: 0.5px;
+  padding-bottom: 5px;
   margin-bottom: 1rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -21,49 +21,43 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px;
+  padding: 5px;
   background-color: #f0f0f0;
   border-radius: 10px;
+  gap: 1rem; /* Add spacing between projects */
 }
 
 .project-list h3 {
-  background-color: #f0f0f0;
-  border-radius: 50px;
-  text-align: left;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #333;
-  font-size: 1.2rem;
-}
-
-.project-list h3:hover {
-  cursor: default;
+  text-align: left;
 }
 
 .project-list p {
-  padding: 3px;
-  background-color: #f0f0f0;
-  border-radius: 6px;
-  text-align: left;
-  font-weight: 300;
+  margin: 0.3rem 0;
   font-size: 1rem;
-}
-
-.project-list strong {
-  padding: 10px;
-  display: block;
+  font-weight: 300;
   text-align: left;
 }
 
-/* ✅ Fix this — li should not be inside p */
 .project-list ul {
-  margin-left: 1.5rem;
-  padding-left: 1rem;
+  margin-left: 1rem;
+  padding-left: 0.5rem;
 }
+
 .project-list ul li {
   list-style-type: disc;
   margin-top: 5px;
   font-weight: 300;
   text-align: left;
+}
+
+.project-list strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
 }
 
 .project-list span {
@@ -75,17 +69,14 @@
 /* 📱 Responsive tweaks */
 @media (max-width: 600px) {
   .project-sec {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .project-list h3 {
     font-size: 1rem;
   }
 
-  .project-list p {
-    font-size: 0.95rem;
-  }
-
+  .project-list p,
   .project-list ul li {
     font-size: 0.95rem;
   }

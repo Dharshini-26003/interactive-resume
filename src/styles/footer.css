@@ -2,7 +2,7 @@
 .footer {
   background-color: #1e1e1e;
   color: #fff;
-  padding: 3rem 1rem;
+  padding: 2rem; /* Reduced from 3rem */
   text-align: center;
   transition: box-shadow 0.3s ease;
 }
@@ -13,8 +13,8 @@
 
 /* Optional heading inside footer */
 .footer h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 1.8rem; /* Slightly smaller */
+  margin-bottom: 1.5rem; /* Reduced from 2rem */
   color: #ffffff;
 }
 
@@ -22,21 +22,22 @@
 .contact-form {
   max-width: 500px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem; /* Reduced from 2rem */
   background-color: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Form layout */
 .contact-form form {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem; /* Adds consistent spacing between fields */
 }
 
 /* Labels */
 .contact-form label {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem; /* Reduced from 0.5rem */
   font-weight: 600;
   color: #333;
   text-align: left;
@@ -45,10 +46,10 @@
 /* Inputs and textarea */
 .contact-form input,
 .contact-form textarea {
-  padding: 0.7rem;
-  margin-bottom: 1.5rem;
+  padding: 0.4rem; /* Slightly reduced */
+  margin-bottom: 0.8rem; /* Reduced from 1.5rem */
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 6px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
 }
@@ -62,11 +63,11 @@
 
 /* Submit button */
 .contact-form button {
-  padding: 0.5rem;
+  padding: 0.6rem 1rem;
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;

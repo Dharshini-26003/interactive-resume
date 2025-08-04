@@ -12,7 +12,6 @@ function MySkills(){
             <li>ReactJS</li>
             <li>Bootstarp</li>
             <li>Responsive Design</li>
-            <li>UI/UX Design</li>
             <li>GitHub</li>
            </ul>
         </div>
