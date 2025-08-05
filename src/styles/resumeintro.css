@@ -26,12 +26,13 @@ html {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     text-align: center;
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
 }
 .profile h2 {
+    align-items: center;
     font-size: 2rem;
     margin-bottom: 1rem;
-    padding: 20px 80px;
+    padding:2px 400px;
 }
 .profile button{
     margin-top: 1rem;
@@ -81,9 +82,9 @@ html {
 .icon-menu {
   position: fixed;
   top: 0px;
-  right: 8px;
+  right: 0px;
   cursor: pointer;
-  z-index: 1002;
+  z-index: 1001;
   color: rgb(219, 255, 197);
 }
 .close-icon{
