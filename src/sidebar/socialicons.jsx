@@ -25,18 +25,21 @@ function Icons(){
       <div className='full-width'>
         {/* <div><a href={<About/>}>About</a></div> */}
         <div className='all-icons'>
-          <div className='icon-menu'  onClick={() => setShowMenu(true)}>
+        <div className='icon-wrapper'>
+          {!showMenu && (
+        <div className='icon-menu' onClick={() => setShowMenu(true)}>
           <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          width="16" 
-          height="16" 
-          fill="currentColor" 
-          className="bi bi-list" 
-          viewBox="0 0 16 16">
-          <path fillRule="evenodd"
-          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-         </svg>
-      </div>
+            xmlns="http://www.w3.org/2000/svg" 
+            width="16" 
+            height="16" 
+            fill="currentColor" 
+            className="bi bi-list" 
+            viewBox="0 0 16 16">
+            <path fillRule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </div>
+          )}
           <div onClick={() => setShowMenu(false)} className='close-icon'>
             <svg 
             xmlns="http://www.w3.org/2000/svg" 
@@ -49,6 +52,7 @@ function Icons(){
             <path d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"/>
          </svg>  
          </div>  
+         </div>
           <div>
             <img src={require('../assets/Dharshupic.jpg')} alt="Dharshu" className='side-image' />
          </div>
