@@ -16,6 +16,7 @@ code {
 }
 html {
   scroll-behavior: smooth;
+  
 }
 .fade-in {
   opacity: 0;

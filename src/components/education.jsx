@@ -3,7 +3,7 @@ import React from 'react';
 function MyEducations(){
     return(
         <section id='education'>
-            <h2>Education</h2>
+            <h1>Education</h1>
             <article className='edu-list'>
                 <h3>College/University</h3>
                 <p>

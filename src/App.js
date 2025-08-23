@@ -1,5 +1,5 @@
-import React from "react"
-import MyProfile from './components/myprofile'
+import React, { useEffect } from "react";
+import MyProfile from './components/myprofile';
 import ProfilePic from "./sidebar/ProfilePic";
 import Icons from "./sidebar/socialicons";
 import About from "./components/about"; 
@@ -7,9 +7,9 @@ import MySkills from "./components/skills";
 import MyEducations from "./components/education";
 import MyProjects from "./components/projects";
 import Mycontact from "./components/contact";
-import Footer, {useState, useRef} from "./components/footer";
+import Footer from "./components/footer";
 import './styles/App.css';
-import './styles/index.css'
+import './styles/index.css';
 import './styles/resumeintro.css';
 import './styles/about.css';
 import './styles/skills.css';
@@ -19,32 +19,56 @@ import './styles/contacts.css';
 import './styles/footer.css';
 
 function App() {
+  useEffect(() => {
+    const sections = document.querySelectorAll('[data-fade]');
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  }, []);
+
   return (
     <div>
-      <div className="resumeintro" fade-in="true">
-        <ProfilePic/>
+      <section className="resumeintro" data-fade>
+        <ProfilePic />
         <MyProfile />
         <Icons />
-      </div>
-      <div className="about-sec" fade-in="true">
+      </section>
+
+      <section className="about-sec" data-fade>
         <About />
-      </div>
-      <div className="skills-sec" fade-in="true">
+      </section>
+
+      <section className="skills-sec" data-fade>
         <MySkills />
-      </div>
-      <div className="edu-sec" fade-in="true">
-        <MyEducations />  
-      </div>
-      <div className="project-sec"  fade-in="true">
-        <MyProjects/>
-      </div>
-      <div className="contact-sec"  fade-in="true">
+      </section>
+
+      <section className="edu-sec" data-fade>
+        <MyEducations />
+      </section>
+
+      <section className="project-sec" data-fade>
+        <MyProjects />
+      </section>
+
+      <section className="contact-sec" data-fade>
         <Mycontact />
-      </div>  
-      <div className="footer-sec" fade-in="true">
-      <Footer/>
-      </div>
-        
+      </section>
+
+      <section className="footer-sec" data-fade>
+        <Footer />
+      </section>
     </div>
   );
 }

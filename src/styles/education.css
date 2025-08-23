@@ -1,19 +1,31 @@
-.edu-sec {
-  background-color: #f7fafc;
-  border-radius: 18px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  max-width: 900px;
-  margin: 24px auto;
-  padding: 1.5rem;
-  transition: box-shadow 0.3s ease;
-  color: #333;
-  box-sizing: border-box;
+.edu-sec section{
+  margin-top: 10px;
 }
-
-.edu-sec h2 {
-  font-size: 1.6rem;
-  border-bottom: 2px solid #0b8200;
-  padding-bottom: 0.5px;
+.edu-sec{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  z-index: 1;
+  font-size: 2rem;
+  background-image: url("../assets/Education\ \(2\).png");
+  background-repeat: repeat;
+  background-size: auto;
+  color: #ffffff;;
+  margin-top: 10px;
+}
+.edu-sec::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(24, 0, 24, 0.4); /* dark overlay for readability */
+  z-index: -1;
+}
+.edu-sec h1 {
+  font-size: 1.9rem;
+  padding-bottom: 5px;
   margin-bottom: 1rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -23,36 +35,43 @@
   margin-bottom: 1.5rem;
   padding: 1rem;
   margin: 10px auto;
-  background-color: #f0f0f0;
   border: 1px solid #ccc;
   border-radius: 6px;
   text-align: left;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   max-width: 90%;
 }
-
-.edu-sec p:hover {
-  background-color: white;
-  transition: background-color 0.3s ease;
+.edu-sec h3{
+  font-size: 1.3rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffc2e8;
+}
+.edu-sec p strong:hover, .edu-sec p span:hover {
+  background-color: #efe2fc;
+  color: black;
   cursor: default;
+  width: 100%;
+  padding: 7px;
+  line-height: 2px;
+  border-radius: 20px;
 }
 
 .edu-sec p strong {
-  font-size: 1.1rem;
-  color: #333;
+  font-size: 1.2rem;
+  color: #f0eded;
+  font-weight: 200;
 }
 
 .edu-sec p span {
-  font-weight: 300;
+  font-weight: 200;
   padding: 5px;
-  color: #515151;
+  color: #fefdfd;
   font-size: 1.1rem;
 }
-
 /* 📱 Mobile Tweaks */
 @media (max-width: 768px) {
   .edu-sec {
-    padding: 15px;
+    padding: 50px 15px;
     margin: 0 auto;
   }
 
@@ -61,8 +80,7 @@
     text-align: center;
     font-size: 1rem;
   }
-
-  .edu-sec h2 {
-    font-size: 1.3rem;
+  .edu-sec h2{
+    font-size: 1.5rem;
   }
 }

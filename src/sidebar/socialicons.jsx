@@ -1,14 +1,19 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import '../assets/Dharshupic.jpg'
 // import About from '../components/about.jsx'
 
 function Icons(){
   const[showMenu, setShowMenu] = useState(false);
+  useEffect(() => {
+  document.body.style.overflow = showMenu ? 'hidden' : 'auto';
+}, [showMenu]);
+  
   return (
+    
    
   <div className='social-icons-container'>
         {/* Menu Icon */}
-        <div className='icon-menu'  onClick={() => setShowMenu(true)}>
+      <div className='icon-menu'  onClick={() => setShowMenu(true)}>
           <svg 
           xmlns="http://www.w3.org/2000/svg" 
           width="16" 
@@ -22,11 +27,13 @@ function Icons(){
       </div>
       {/* social icons menu */}
     {showMenu && (
-      <div className='full-width'>
+      <div>
+      <div className="menu-overlay" onClick={() => setShowMenu(false)}></div>
+      <div className={`full-width ${showMenu ? 'show' : ''}`}>
         {/* <div><a href={<About/>}>About</a></div> */}
         <div className='all-icons'>
-        <div className='icon-wrapper'>
-          {!showMenu && (
+      <div className='icon-wrapper'>
+        {!showMenu && (
         <div className='icon-menu' onClick={() => setShowMenu(true)}>
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
@@ -40,7 +47,7 @@ function Icons(){
           </svg>
         </div>
           )}
-          <div onClick={() => setShowMenu(false)} className='close-icon'>
+        <div onClick={() => setShowMenu(false)} className='close-icon'>
             <svg 
             xmlns="http://www.w3.org/2000/svg" 
             width="16" 
@@ -51,9 +58,9 @@ function Icons(){
             <path d="M5.83 5.146a.5.5 0 0 0 0 .708L7.975 8l-2.147 2.146a.5.5 0 0 0 .707.708l2.147-2.147 2.146 2.147a.5.5 0 0 0 .707-.708L9.39 8l2.146-2.146a.5.5 0 0 0-.707-.708L8.683 7.293 6.536 5.146a.5.5 0 0 0-.707 0z"/>
             <path d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"/>
          </svg>  
-         </div>  
-         </div>
-          <div>
+        </div>  
+      </div>
+         <div>
             <img src={require('../assets/Dharshupic.jpg')} alt="Dharshu" className='side-image' />
          </div>
          <nav className="menu-bar">
@@ -73,7 +80,7 @@ function Icons(){
               xmlns="http://www.w3.org/2000/svg" 
               width="16" 
               height="16" 
-              fill="currentColor" 
+              fill="Blue"
               className="bi bi-linkedin" 
               viewBox="0 0 16 16">
               <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
@@ -104,6 +111,7 @@ function Icons(){
               </svg>
             </a>
           </div>
+        </div>
         </div>
         </div>
    )}  
