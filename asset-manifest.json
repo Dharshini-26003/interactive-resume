@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/interactive-resume/static/css/main.a4062d78.css",
-    "main.js": "/interactive-resume/static/js/main.a42919da.js",
+    "main.css": "/interactive-resume/static/css/main.26efbd8d.css",
+    "main.js": "/interactive-resume/static/js/main.12bca820.js",
+    "static/media/footer.png": "/interactive-resume/static/media/footer.fef765748d316d1ff53c.png",
+    "static/media/Skills (2).png": "/interactive-resume/static/media/Skills (2).03bf9095fdc57aecc9cb.png",
+    "static/media/about.png": "/interactive-resume/static/media/about.5461d283b49e9032820a.png",
+    "static/media/Intro.png": "/interactive-resume/static/media/Intro.26ac6c040cd3210e8d30.png",
+    "static/media/contact.png": "/interactive-resume/static/media/contact.31b9e0db6d5fdcb5f3d3.png",
+    "static/media/project.png": "/interactive-resume/static/media/project.4b217acbd54ef73402e2.png",
     "static/media/dharshini.jpg": "/interactive-resume/static/media/dharshini.0cb943ed52deff2f237a.jpg",
-    "static/media/Dharshupic.jpg": "/interactive-resume/static/media/Dharshupic.019486145d020f21d691.jpg",
+    "static/media/Education (2).png": "/interactive-resume/static/media/Education (2).750d7ab7bc9ecb6d1878.png",
+    "static/media/Dharshupic.jpg": "/interactive-resume/static/media/Dharshupic.2600b02b144c8307f53a.jpg",
     "index.html": "/interactive-resume/index.html",
-    "main.a4062d78.css.map": "/interactive-resume/static/css/main.a4062d78.css.map",
-    "main.a42919da.js.map": "/interactive-resume/static/js/main.a42919da.js.map"
+    "main.26efbd8d.css.map": "/interactive-resume/static/css/main.26efbd8d.css.map",
+    "main.12bca820.js.map": "/interactive-resume/static/js/main.12bca820.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4062d78.css",
-    "static/js/main.a42919da.js"
+    "static/css/main.26efbd8d.css",
+    "static/js/main.12bca820.js"
   ]
 }
