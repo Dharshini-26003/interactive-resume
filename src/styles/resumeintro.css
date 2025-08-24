@@ -46,7 +46,7 @@ html {
   height: 60vh;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   transition: transform 0.5s ease;
 }
 @keyframes fadeInZoom {
@@ -62,8 +62,8 @@ html {
 
 /* Profile text */
 .profile h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 10px;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
@@ -139,14 +139,14 @@ html {
   box-shadow: 0 0 8px rgba(255,255,255,0.4);
   transition: transform 0.3s ease;
 }
-
 .side-image:hover {
   transform: scale(1.05);
 }
+
 .icon-menu {
-  position: absolute;
+  position: relative;
   top: 20px;
-  right: 20px;
+  right: 0px;
   z-index: 1001;
   cursor: pointer;
 }
